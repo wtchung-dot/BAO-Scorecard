@@ -644,6 +644,7 @@ td.hmap-on{background:var(--green-bg);} td.hmap-off{background:var(--red-bg);} t
     </div>
     <div class="modal-body">
       <div class="note" style="margin-bottom:16px;">Budgets from your P&amp;L vary week by week. Re-import via ↑ Import → Budget JSON to update.</div>
+      <div style="margin-bottom:16px;"><button class="btn" onclick="resetAllBudgets()" style="background:var(--red);color:var(--cream);border:none;font-size:11px;padding:8px 16px;">⚠ Reset All Budgets</button> <span style="font-size:11px;color:var(--grey);margin-left:8px;">Clear all old budget data before re-importing</span></div>
       <table style="width:100%;border-collapse:collapse;font-size:12px;">
         <thead><tr>
           <th style="text-align:left;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--grey);padding:7px 10px;border-bottom:2px solid var(--ink);">Restaurant</th>
@@ -655,7 +656,7 @@ td.hmap-on{background:var(--green-bg);} td.hmap-off{background:var(--red-bg);} t
       </table>
     </div>
     <div class="modal-footer">
-      <button class="btn danger" onclick="resetAllBudgets()" title="Clear all budget data from Firebase and localStorage">⚠ Reset All Budgets</button>
+      <div></div>
       <button class="btn outline" onclick="closeModal('budget-modal')">Close</button>
     </div>
   </div>
